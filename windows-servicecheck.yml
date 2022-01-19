@@ -1,0 +1,12 @@
+---
+- name: A playbook to enable BITS and Spooler services
+  hosts: 10.0.0.10
+  tasks:
+    - name: Enable Spooler
+      win_services:
+        name: spooler
+        state: started
+    - name: Enable BITS
+      win_services:
+        name: bits
+        state: started
