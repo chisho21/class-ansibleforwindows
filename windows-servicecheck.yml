@@ -1,6 +1,6 @@
 ---
 - name: A playbook to enable BITS and Spooler services
-  hosts: 10.0.0.10
+  hosts: dc00.lab.ferosfer.io
   tasks:
     - name: Enable Spooler
       win_service:
